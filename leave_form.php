@@ -5,7 +5,7 @@
     <style>
         body {
             background-image: url(Blue-abstract-background-curve_1920x1080.jpg);
-
+            margin-top: 50px;
         }
 
         .error {
@@ -23,6 +23,7 @@
             align-items: center;
             font-size: 35px;
             text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
     </style>
 </head>
@@ -106,6 +107,12 @@
             <input type="radio" name="gender" <?php if (isset($gender) && $gender == "other") echo "checked"; ?> value="other">Other
             <span class="error">* <?php echo $genderErr; ?></span>
             <br><br>
+            Department:
+            Designation:
+            Leave_commencing_date:
+            Duty_reputing_date:
+            Leave_type:
+            Reason_to_leave:
             <input type="submit" name="submit" value="Submit">
         </form>
     </div>
