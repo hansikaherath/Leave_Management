@@ -107,13 +107,37 @@
             <input type="radio" name="gender" <?php if (isset($gender) && $gender == "other") echo "checked"; ?> value="other">Other
             <span class="error">* <?php echo $genderErr; ?></span>
             <br><br>
-            Department:
-            Designation:
-            Leave_commencing_date:
-            Duty_reputing_date:
-            Leave_type:
-            Reason_to_leave:
+
+            Department:<input type="text" name="department" value="<?php echo $department; ?>">
+            <span class="error">* <?php echo $nameErr; ?></span>
+            <br><br>
+            Designation:<input type="text" name="designation" value="<?php echo $designation; ?>">
+            <span class="error">* <?php echo $nameErr; ?></span>
+            <br><br>
+            Leave Commencing date:
+            Duty reputing date:
+            No. of days Leave Apply:
+            Leave type:
+            Reason to leave:<input type="text" name="reason" value="<?php echo $reason; ?>">
+            <span class="error">* <?php echo $nameErr; ?></span>
+            <br><br>
+            Acting Office:<input type="text" name="acting" value="<?php echo $acting; ?>">
+            <span class="error">* <?php echo $nameErr; ?></span>
+            <br><br>
+            Approved by :<input type="text" name="approved" value="<?php echo $approved; ?>">
+            <span class="error">* <?php echo $nameErr; ?></span>
+            <br><br>
+            Approve:
+            Date of first appoinment:
+            Address when on leave:<input type="text" name="address" value="<?php echo $address; ?>">
+            <span class="error">* <?php echo $nameErr; ?></span>
+            <br><br>
+            <!--submit-->
             <input type="submit" name="submit" value="Submit">
+            <!--back to Home-->
+            <input type="submit" name="Home" value="Home">
+            <!--clear form-->
+            <input type="submit" name="clear" value="Clear">
         </form>
     </div>
     <?php
